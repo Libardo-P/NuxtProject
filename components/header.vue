@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
       <div class="container">
         <NuxtLink to="/" class="navbar-brand py-0">
-          <img src="/Images/logo1.jpeg" alt="Universidade da Madeira" height="60">
+          <img src="/Images/logo1.jpeg" alt="Universidade da Madeira" height="55">
         </NuxtLink>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
