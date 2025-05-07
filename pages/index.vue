@@ -18,7 +18,7 @@
             </p>
             <div class="d-flex justify-content-center mt-3">
               <NuxtLink to="/alunos" class="btn btn-custom me-2">Info Alunos</NuxtLink>
-              <NuxtLink to="/docente" class="btn btn-custom">Docentes</NuxtLink>
+              <NuxtLink to="/docentes" class="btn btn-custom">Docentes</NuxtLink>
             </div>
           </div>
         </div>

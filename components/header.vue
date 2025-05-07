@@ -11,7 +11,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><NuxtLink class="nav-link" to="/">Home</NuxtLink></li>
             <li class="nav-item"><NuxtLink class="nav-link" to="/alunos">Alunos</NuxtLink></li>
-            <li class="nav-item"><NuxtLink class="nav-link" to="/docente">Docentes</NuxtLink></li>
+            <li class="nav-item"><NuxtLink class="nav-link" to="/docentes">Docentes</NuxtLink></li>
             <li class="nav-item"><NuxtLink class="nav-link" to="/documentos">Documentos</NuxtLink></li>
             <li class="nav-item"><NuxtLink class="nav-link" to="/administrador">Administrador</NuxtLink></li>
             <li class="nav-item"><NuxtLink class="btn btn-custom" to="/login">Login</NuxtLink></li>
