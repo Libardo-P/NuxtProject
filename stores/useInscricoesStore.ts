@@ -1,12 +1,32 @@
+// stores/useInscricoesStore.ts
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useInscricoesStore = defineStore('inscricoes', () => {
-  const lista = ref<{ uc: string; utilizador: string; tipo: string }[]>([])
+interface Inscricao {
+  uc: string
+  utilizador: string
+  tipo: 'aluno' | 'docente'
+}
 
-  function inscrever(uc: string, utilizador: string, tipo: string) {
-    lista.value.push({ uc, utilizador, tipo })
+export const useInscricoesStore = defineStore('inscricoes', () => {
+  const lista = ref<Inscricao[]>([
+    // Alunos
+    { uc: 'Matemática Discreta', utilizador: 'João Silva', tipo: 'aluno' },
+    { uc: 'Bases de Dados', utilizador: 'João Silva', tipo: 'aluno' },
+    { uc: 'Bases de Dados', utilizador: 'Maria Costa', tipo: 'aluno' },
+
+    // Docentes
+    { uc: 'Matemática Discreta', utilizador: 'Dr. João Silva', tipo: 'docente' },
+    { uc: 'Bases de Dados', utilizador: 'Dr. Luís Ferreira', tipo: 'docente' }
+  ])
+
+  function adicionar(inscricao: Inscricao) {
+    lista.value.push(inscricao)
   }
 
-  return { lista, inscrever }
+  function remover(index: number) {
+    lista.value.splice(index, 1)
+  }
+
+  return { lista, adicionar, remover }
 })

@@ -2,7 +2,8 @@
   <div class="d-flex flex-column min-vh-100">
     <Header />
 
-    <main class="container py-5 flex-grow-1">
+    <!-- Compensar o header fixo com padding-top -->
+    <main class="container flex-grow-1" style="padding-top: 100px;">
       <NuxtPage />
     </main>
 
